@@ -266,13 +266,13 @@ def edit_news(id):
                     # if file is added we save it in news folder
                     # and we delete old file
 
-                    if form.file_1_ignore.data:
+                    if form.file_1_ignore.data and file == 'file_1':
                         images[0] = ''
                         continue
-                    if form.file_2_ignore.data:
+                    if form.file_2_ignore.data and file == 'file_2':
                         images[1] = ''
                         continue
-                    if form.file_3_ignore.data:
+                    if form.file_3_ignore.data and file == 'file_3':
                         images[2] = ''
                         continue
 
